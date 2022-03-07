@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Sweet Dreams: Haz tu pedido</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <h2>Crea tu pedido</h2>
+    <form action="/compra.html" id="pedido" method="post">
+        <!-- cliente -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" form="pedido"><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono" name="telefono" form="pedido" maxlength="10"><br><br>
+
+        <label for="correo">Email:</label>
+        <input type="email" id="email" name="email" form="pedido"><br><br>
+        
+        <hr>
+        <!-- Pastel -->
+        <h2>Opciones para el pastel</h2>
+        <label>Descripción del pastel</label></br>
+        <textarea cols="50" rows="7"></textarea>
+
+        <br/>
+        <h2 for="sabores">Sabores</h2>
+        <select id="sabores" name="sabores" multiple>
+            <option value="chocolate">Chocolate</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="limón">Limón</option>
+            <option value="zanahoria">Zanahoria</option>
+        </select>
+        
+        <h2>Adornos</h2>
+        <label for="adornos">Adornos</label><br>
+        <select id="adornos" name="adornos" multiple>
+            <option value="velas">Velas</option>
+            <option value="fotografía">Fotografía</option>
+            <option value="dedicatoria">Dedicatoria</option>
+            <option value="tarjeta">Tarjeta</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar pedidos">
+        <input type="reset" value="Cancelar">
+    </form>
+
+
+</body>
+</html>
